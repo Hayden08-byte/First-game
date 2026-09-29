@@ -13,7 +13,7 @@ public class Enemy : MonoBehaviour
     private Rigidbody2D rb;
     public bool Vertical;
     public LayerMask groundLayerMask;
-    
+    SpriteRenderer sr;
     bool isGrounded;
     
     
@@ -38,6 +38,7 @@ public class Enemy : MonoBehaviour
         groundLayerMask = LayerMask.GetMask("Ground");
         startPos = transform.position;
         direction = 4;
+        sr = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -60,10 +61,19 @@ public class Enemy : MonoBehaviour
         }
 
 
+        FlipSprite();
 
-
-
-
+        void FlipSprite()
+        {
+            if (rb.linearVelocityX > 0f)
+            {
+                sr.flipX = true;
+            }
+            else
+            {
+                sr.flipX = false;
+            }
+        }
 
 
         rb.linearVelocityX = speed * direction;

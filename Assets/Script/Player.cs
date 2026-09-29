@@ -114,28 +114,11 @@ public class Player : MonoBehaviour
         }
     }
 
-    private void OnCollisionStay2D(Collision2D collision)
-    {
-        isGrounded = true;
-        
-    }
+   
 
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        isGrounded = false;
-    }
-
-    public class PlayerCollision : MonoBehaviour
-    {
-        private void OnCollisionEnter(Collision collision)
-        {
-            // Check if the object we touched has the "Enemy" tag
-            if (collision.gameObject.CompareTag("Enemy 1, enemy 2"))
-            {
-                // Destroy the player game object
-                Destroy(gameObject);
-            }
-        }
-    }
+   
+    
+       
+    
 
 }

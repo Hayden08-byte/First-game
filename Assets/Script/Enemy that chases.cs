@@ -1,65 +1,62 @@
+using System.Diagnostics.Metrics;
 using UnityEngine;
 using UnityEngine.AI;
+using static UnityEditor.Experimental.AssetDatabaseExperimental.AssetDatabaseCounters;
 
-public class enemythatjumps : MonoBehaviour
+
+
+public class enemythatchases : MonoBehaviour
 {
-   
-    private UnityEngine.Transform player;
-
-    private int direction;
-    private Rigidbody2D rb;
-    public bool Vertical;
     public LayerMask groundLayerMask;
-    bool EnemyisGrounded;
-    bool isGrounded;
-
-
-    public UnityEngine.Transform targetDestination;
-    private NavMeshAgent agent;
     public float delta = 1.5f;  // Amount to move left and right from the start point
-    public float speed = 2.0f;
+    public float speed = 1.0f;
     private Vector3 startPos;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    private int direction;
+    SpriteRenderer sr;
+    Rigidbody2D rb;
+    public GameObject player;
+    int Counter;
     void Start()
     {
+        sr = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
-
-        agent = GetComponent<NavMeshAgent>();
-        groundLayerMask = LayerMask.GetMask("Ground");
         startPos = transform.position;
         direction = 4;
     }
-
-    // Update is called once per frame
+      
+// Update is called once per frame
     void Update()
     {
-        bool l, r;
+        print("player x position is " + player.transform.position.x);
+        print("enemy x position is " + transform.position.x);
 
-        l = RayCollisionCheck(-0.5f, 0);
-        r = RayCollisionCheck(0.5f, 0);
-
-        if (l == false && direction < 0)
+        if (Counter == 0f)
         {
-            direction = 4;
+            if (player.transform.position.x < transform.position.x)
+            {
+                direction = -4;
+            }
+
+            if (player.transform.position.x > transform.position.x)
+            {
+                direction = 4;
+            }
         }
-
-        if (r == false && direction > 0)
-        {
-            direction = -4;
-        }
-
-
-
-
-
-
-
+        FlipSprite();
 
         rb.linearVelocityX = speed * direction;
-
-       
     }
-
+    void FlipSprite()
+    {
+        if (player.transform.position.x < transform.position.x)
+        {
+            sr.flipX = true;
+        }
+        else
+        {
+            sr.flipX = false;
+        }
+    }
     public bool RayCollisionCheck(float xoffs, float yoffs)
     {
         float rayLength = 0.5f; // length of raycast
@@ -74,8 +71,7 @@ public class enemythatjumps : MonoBehaviour
         hit = Physics2D.Raycast(transform.position + offset, Vector2.down, rayLength, groundLayerMask);
 
         Color hitColor = Color.red;
-
-
+       
         if (hit.collider != null)
         {
             print("Player has collided with Ground layer");
@@ -87,4 +83,5 @@ public class enemythatjumps : MonoBehaviour
         Debug.DrawRay(transform.position + offset, Vector2.down * rayLength, hitColor);
         return hitSomething;
     }
+     
 }
