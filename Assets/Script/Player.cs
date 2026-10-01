@@ -13,12 +13,12 @@ public class Player : MonoBehaviour
     bool isGrounded;
     Animator anim;
     SpriteRenderer sr;
-    
-    
+    HelperScript helper;
+    bool TabkeyisPressed;
 
 
 
-    
+
 
 
     void Start()
@@ -29,8 +29,9 @@ public class Player : MonoBehaviour
 
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        sr= GetComponent<SpriteRenderer>();
-        
+        sr = GetComponent<SpriteRenderer>();
+
+        helper = gameObject.AddComponent<HelperScript>();
 
 
     }
@@ -42,10 +43,13 @@ public class Player : MonoBehaviour
         Vector2 moveVel = moveAction.ReadValue<Vector2>();
         rb.linearVelocity = new Vector2(moveVel.x * 6, rb.linearVelocity.y);
 
-       
 
-        
-
+        /*
+        if (Keyboard.current.pKey.wasPressedThisFrame)
+        {
+            helper.DestroyObject();
+        }
+        */
 
         if (rb.linearVelocityX != 0)
         {
@@ -73,7 +77,7 @@ public class Player : MonoBehaviour
         print("grounded=" + isGrounded);
 
 
-        
+
 
 
 
@@ -101,24 +105,30 @@ public class Player : MonoBehaviour
         }
     }
 
-    
+
 
 
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Enemy")
+        if (collision.gameObject.tag == "enemy")
         {
-            int health = 40;
-            health -= 1; // Reduce player health
+            helper.DestroyObject();
         }
+        if (collision.gameObject.tag == "Killercoins")
+        {
+        
+            helper.DestroyObject();
+        }
+    
     }
 
-   
 
-   
+
     
-       
-    
+
+
+
+
 
 }

@@ -16,12 +16,14 @@ public class enemythatchases : MonoBehaviour
     Rigidbody2D rb;
     public GameObject player;
     int Counter;
+    HelperScript helper;
     void Start()
     {
         sr = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
         startPos = transform.position;
         direction = 4;
+        helper = gameObject.AddComponent<HelperScript>();
     }
       
 // Update is called once per frame
@@ -30,7 +32,7 @@ public class enemythatchases : MonoBehaviour
         print("player x position is " + player.transform.position.x);
         print("enemy x position is " + transform.position.x);
 
-        if (Counter == 0f)
+        void DodelayAction(float delayTime) 
         {
             if (player.transform.position.x < transform.position.x)
             {
@@ -42,6 +44,9 @@ public class enemythatchases : MonoBehaviour
                 direction = 4;
             }
         }
+        DodelayAction(5);
+        
+        
         FlipSprite();
 
         rb.linearVelocityX = speed * direction;
@@ -83,5 +88,13 @@ public class enemythatchases : MonoBehaviour
         Debug.DrawRay(transform.position + offset, Vector2.down * rayLength, hitColor);
         return hitSomething;
     }
-     
+    /*
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            helper.DestroyObject();
+        }
+    }
+    */
 }

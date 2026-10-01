@@ -2,10 +2,11 @@ using UnityEngine;
 
 public class coin : MonoBehaviour
 {
+    HelperScript helper;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        helper = gameObject.AddComponent<HelperScript>();
     }
 
     // Update is called once per frame
@@ -14,13 +15,11 @@ public class coin : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter(Collision collision)
+    void OnCollisionEnter2D(Collision2D collision)
     {
-        // Check if the object we touched has the "Enemy" tag
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.tag == "player")
         {
-            // Destroy the player game object
-            Destroy(gameObject);
+            helper.DestroyObject();
         }
     }
 }

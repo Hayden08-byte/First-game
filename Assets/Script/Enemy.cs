@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.InputSystem;
 using static UnityEditor.Searcher.SearcherWindow.Alignment;
 using static UnityEngine.RuleTile.TilingRuleOutput;
 
@@ -15,8 +16,8 @@ public class Enemy : MonoBehaviour
     public LayerMask groundLayerMask;
     SpriteRenderer sr;
     bool isGrounded;
-    
-    
+    HelperScript helper;
+
     public UnityEngine.Transform targetDestination;
     private NavMeshAgent agent;
     public float delta = 1.5f;  // Amount to move left and right from the start point
@@ -39,6 +40,10 @@ public class Enemy : MonoBehaviour
         startPos = transform.position;
         direction = 4;
         sr = GetComponent<SpriteRenderer>();
+        // Add the HelperScript to this GameObject
+        // and store a reference to it
+        helper = gameObject.AddComponent<HelperScript>();
+
     }
 
     // Update is called once per frame
@@ -60,20 +65,12 @@ public class Enemy : MonoBehaviour
             direction = -4;
         }
 
-
-        FlipSprite();
-
-        void FlipSprite()
+        if (Keyboard.current.fKey.wasPressedThisFrame)
         {
-            if (rb.linearVelocityX > 0f)
-            {
-                sr.flipX = true;
-            }
-            else
-            {
-                sr.flipX = false;
-            }
+            helper.FlipSprite(true);
         }
+
+        
 
 
         rb.linearVelocityX = speed * direction;
@@ -129,9 +126,15 @@ public class Enemy : MonoBehaviour
         Debug.DrawRay(transform.position + offset, Vector2.down * rayLength, hitColor);
         return hitSomething;
     }
-
-
-
+    /*
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            helper.DestroyObject();
+        }
+    }
+    */
 }
 
 
