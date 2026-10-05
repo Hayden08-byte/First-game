@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 2088232}
   - component: {fileID: 2088231}
   m_Layer: 0
-  m_Name: Copy of bg_12 (14)
+  m_Name: Small Snowy Ground 7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -269,7 +269,7 @@ GameObject:
   - component: {fileID: 2966502}
   - component: {fileID: 2966503}
   m_Layer: 0
-  m_Name: Copy of bg_0 (20)
+  m_Name: Tree 11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -501,7 +501,7 @@ GameObject:
   - component: {fileID: 43340007}
   - component: {fileID: 43340006}
   m_Layer: 0
-  m_Name: Copy of bg_12 (5)
+  m_Name: Small Snowy Ground 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -864,12 +864,12 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7945329754545256573, guid: e33ced28b5cb42c409d1a53f1225ea54, type: 3}
+  m_Sprite: {fileID: 7945329754545256573, guid: e14e4f31b20fa604594a2655a2ad6152, type: 3}
   m_Color: {r: 1, g: 0.995283, b: 0.995283, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 2, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -884,7 +884,7 @@ Transform:
   m_GameObject: {fileID: 104796897}
   serializedVersion: 2
   m_LocalRotation: {x: 0.0023829867, y: -0, z: -0, w: 0.99999714}
-  m_LocalPosition: {x: -14.7, y: -0.8, z: -0}
+  m_LocalPosition: {x: -14.85, y: -1.27, z: 0}
   m_LocalScale: {x: 2.0869904, y: 1.9259902, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -929,7 +929,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
     oldSize: {x: 2, y: 2}
-    newSize: {x: 1, y: 1}
+    newSize: {x: 2, y: 2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -948,6 +948,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 600dc2e495f54454bbff83299f2d62ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player
+  weapon: {fileID: 4199007149055044957, guid: 0227190ed4e92124eb3c9efe6309d905, type: 3}
 --- !u!95 &104796903
 Animator:
   serializedVersion: 7
@@ -981,7 +982,7 @@ GameObject:
   - component: {fileID: 106079790}
   - component: {fileID: 106079791}
   m_Layer: 0
-  m_Name: Copy of bg_0 (15)
+  m_Name: Tree 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1409,7 +1410,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -8286608827298574006, guid: e33ced28b5cb42c409d1a53f1225ea54, type: 3}
+  m_Sprite: {fileID: -8286608827298574006, guid: e14e4f31b20fa604594a2655a2ad6152, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1666,6 +1667,98 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1806572556}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &187959901
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 187959903}
+  - component: {fileID: 187959902}
+  m_Layer: 0
+  m_Name: Blue sky
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &187959902
+SpriteRenderer:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 187959901}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_Sprite: {fileID: -4547154972960441204, guid: b717838fc2013914daee66245b209ccf, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1.62, y: 1.29}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
+--- !u!4 &187959903
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 187959901}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -92.94411, y: 139.33066, z: 0}
+  m_LocalScale: {x: 184.8625, y: 143.3014, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1806572556}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &191922796
 GameObject:
   m_ObjectHideFlags: 0
@@ -1678,7 +1771,7 @@ GameObject:
   - component: {fileID: 191922798}
   - component: {fileID: 191922797}
   m_Layer: 0
-  m_Name: Copy of bg_12 (3)
+  m_Name: Small Snowy Ground 14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1817,7 +1910,7 @@ GameObject:
   - component: {fileID: 204161892}
   - component: {fileID: 204161891}
   m_Layer: 0
-  m_Name: Copy of bg_12 (8)
+  m_Name: Small Snowy Ground 9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1956,7 +2049,7 @@ GameObject:
   - component: {fileID: 257459039}
   - component: {fileID: 257459038}
   m_Layer: 0
-  m_Name: Copy of bg_12 (16)
+  m_Name: Small Snowy Ground 17
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2233,7 +2326,7 @@ GameObject:
   - component: {fileID: 277942656}
   - component: {fileID: 277942655}
   m_Layer: 0
-  m_Name: Copy of bg_0 (9)
+  m_Name: Tree 15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2326,7 +2419,7 @@ GameObject:
   - component: {fileID: 293136160}
   - component: {fileID: 293136159}
   m_Layer: 0
-  m_Name: Copy of bg_12 (23)
+  m_Name: Small Snowy Ground 20
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2731,98 +2824,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1806572556}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &311983694
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 311983697}
-  - component: {fileID: 311983696}
-  m_Layer: 0
-  m_Name: Copy of bg_6 (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!212 &311983696
-SpriteRenderer:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 311983694}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 1
-  m_MaskInteraction: 0
-  m_Sprite: {fileID: -1363643229159419212, guid: b717838fc2013914daee66245b209ccf, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 0.49, y: 0.5}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_SpriteSortPoint: 0
-  m_BlendShapeWeights: []
---- !u!4 &311983697
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 311983694}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.2711906, y: 92.05806, z: 0}
-  m_LocalScale: {x: 12.7718, y: 5.6323, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1806572556}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &350164948
 GameObject:
   m_ObjectHideFlags: 0
@@ -2834,7 +2835,7 @@ GameObject:
   - component: {fileID: 350164949}
   - component: {fileID: 350164950}
   m_Layer: 0
-  m_Name: Copy of bg_0 (18)
+  m_Name: Tree 8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3065,7 +3066,7 @@ GameObject:
   - component: {fileID: 392526057}
   - component: {fileID: 392526056}
   m_Layer: 0
-  m_Name: Copy of bg_1 (1)
+  m_Name: Snowy Tree 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3268,7 +3269,7 @@ SpriteRenderer:
   m_Size: {x: 2, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
 --- !u!4 &400952227
@@ -3680,7 +3681,7 @@ GameObject:
   - component: {fileID: 472821834}
   - component: {fileID: 472821833}
   m_Layer: 0
-  m_Name: Copy of bg_12 (24)
+  m_Name: Small Snowy Ground 21
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3819,7 +3820,7 @@ GameObject:
   - component: {fileID: 477832187}
   - component: {fileID: 477832186}
   m_Layer: 0
-  m_Name: Copy of bg_12 (21)
+  m_Name: Small Snowy Ground 11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4107,7 +4108,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -8286608827298574006, guid: e33ced28b5cb42c409d1a53f1225ea54, type: 3}
+  m_Sprite: {fileID: -8286608827298574006, guid: e14e4f31b20fa604594a2655a2ad6152, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4423,7 +4424,7 @@ GameObject:
   - component: {fileID: 510628979}
   - component: {fileID: 510628981}
   m_Layer: 0
-  m_Name: Copy of bg_12
+  m_Name: Small Snowy Ground 12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4561,7 +4562,7 @@ GameObject:
   - component: {fileID: 514275516}
   - component: {fileID: 514275517}
   m_Layer: 0
-  m_Name: Copy of bg_0 (19)
+  m_Name: Tree 10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4792,7 +4793,7 @@ GameObject:
   - component: {fileID: 518677776}
   - component: {fileID: 518677777}
   m_Layer: 0
-  m_Name: Copy of bg_0 (21)
+  m_Name: Tree 12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5081,7 +5082,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -8286608827298574006, guid: e33ced28b5cb42c409d1a53f1225ea54, type: 3}
+  m_Sprite: {fileID: -8286608827298574006, guid: e14e4f31b20fa604594a2655a2ad6152, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -5210,7 +5211,7 @@ GameObject:
   - component: {fileID: 543545180}
   - component: {fileID: 543545179}
   m_Layer: 0
-  m_Name: Copy of bg_1 (4)
+  m_Name: snowy tree 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5303,7 +5304,7 @@ GameObject:
   - component: {fileID: 581593871}
   - component: {fileID: 581593870}
   m_Layer: 0
-  m_Name: Copy of bg_12 (7)
+  m_Name: Small Snowy Ground 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5442,7 +5443,7 @@ GameObject:
   - component: {fileID: 600505482}
   - component: {fileID: 600505481}
   m_Layer: 0
-  m_Name: Copy of bg_12 (4)
+  m_Name: Small Snowy Ground 15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5964,7 +5965,7 @@ GameObject:
   - component: {fileID: 716755616}
   - component: {fileID: 716755615}
   m_Layer: 0
-  m_Name: Copy of bg_12 (9)
+  m_Name: Small Snowy Ground 10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6252,7 +6253,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -8286608827298574006, guid: e33ced28b5cb42c409d1a53f1225ea54, type: 3}
+  m_Sprite: {fileID: -8286608827298574006, guid: e14e4f31b20fa604594a2655a2ad6152, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -6290,7 +6291,7 @@ GameObject:
   - component: {fileID: 759657942}
   - component: {fileID: 759657941}
   m_Layer: 0
-  m_Name: Copy of bg_12 (22)
+  m_Name: Small Snowy Ground 18
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6428,7 +6429,7 @@ GameObject:
   - component: {fileID: 788154459}
   - component: {fileID: 788154460}
   m_Layer: 0
-  m_Name: Copy of bg_0 (11)
+  m_Name: Tree 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6521,7 +6522,7 @@ GameObject:
   - component: {fileID: 821769602}
   - component: {fileID: 821769601}
   m_Layer: 0
-  m_Name: Copy of bg_12 (10)
+  m_Name: Small Snowy Ground 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6659,7 +6660,7 @@ GameObject:
   - component: {fileID: 835152387}
   - component: {fileID: 835152386}
   m_Layer: 0
-  m_Name: Copy of bg_0 (7)
+  m_Name: Tree 22
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6889,7 +6890,7 @@ SpriteRenderer:
   m_Size: {x: 2, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
 --- !u!1 &858921432
@@ -7011,7 +7012,7 @@ Transform:
   m_GameObject: {fileID: 858921432}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -14.7, y: -0.8, z: -10}
+  m_LocalPosition: {x: -14.85, y: -1.27, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7028,7 +7029,7 @@ GameObject:
   - component: {fileID: 877571468}
   - component: {fileID: 877571467}
   m_Layer: 0
-  m_Name: Copy of bg_0 (3)
+  m_Name: Tree 18
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7120,7 +7121,7 @@ GameObject:
   - component: {fileID: 882895499}
   - component: {fileID: 882895498}
   m_Layer: 0
-  m_Name: Copy of bg_0 (10)
+  m_Name: Tree 16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7611,7 +7612,7 @@ Transform:
   m_GameObject: {fileID: 957686008}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -14.7, y: -0.8, z: -10}
+  m_LocalPosition: {x: -14.85, y: -1.27, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7661,7 +7662,7 @@ GameObject:
   - component: {fileID: 985251109}
   - component: {fileID: 985251108}
   m_Layer: 0
-  m_Name: Copy of bg_12 (12)
+  m_Name: Small Snowy Ground 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7939,7 +7940,7 @@ GameObject:
   - component: {fileID: 1022235487}
   - component: {fileID: 1022235486}
   m_Layer: 0
-  m_Name: Copy of bg_12 (19)
+  m_Name: Small Snowy Ground 26
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8078,7 +8079,7 @@ GameObject:
   - component: {fileID: 1030890688}
   - component: {fileID: 1030890687}
   m_Layer: 0
-  m_Name: Copy of bg_12 (17)
+  m_Name: Small Snowy Ground 24
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8494,7 +8495,7 @@ GameObject:
   - component: {fileID: 1045651237}
   - component: {fileID: 1045651236}
   m_Layer: 0
-  m_Name: Copy of bg_0 (4)
+  m_Name: Tree 19
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8725,7 +8726,7 @@ GameObject:
   - component: {fileID: 1078690349}
   - component: {fileID: 1078690348}
   m_Layer: 0
-  m_Name: Copy of bg_0 (2)
+  m_Name: Tree 17
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8956,7 +8957,7 @@ GameObject:
   - component: {fileID: 1119275234}
   - component: {fileID: 1119275233}
   m_Layer: 0
-  m_Name: Copy of bg_0 (6)
+  m_Name: Tree 21
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9049,7 +9050,7 @@ GameObject:
   - component: {fileID: 1138756882}
   - component: {fileID: 1138756881}
   m_Layer: 0
-  m_Name: Copy of bg_12 (6)
+  m_Name: Small Snowy Ground 16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9325,101 +9326,9 @@ SpriteRenderer:
   m_Size: {x: 2, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
---- !u!1 &1233111126
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1233111128}
-  - component: {fileID: 1233111127}
-  m_Layer: 0
-  m_Name: Copy of bg_4
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!212 &1233111127
-SpriteRenderer:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1233111126}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_Sprite: {fileID: -4547154972960441204, guid: b717838fc2013914daee66245b209ccf, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1.62, y: 1.29}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_SpriteSortPoint: 0
-  m_BlendShapeWeights: []
---- !u!4 &1233111128
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1233111126}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -92.63, y: 138.91806, z: 0}
-  m_LocalScale: {x: 185.64206, y: 144.27121, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1806572556}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1245172005
 GameObject:
   m_ObjectHideFlags: 0
@@ -9571,7 +9480,7 @@ GameObject:
   - component: {fileID: 1251938551}
   - component: {fileID: 1251938550}
   m_Layer: 0
-  m_Name: Copy of bg_12 (20)
+  m_Name: Small Snowy Ground 27
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9848,7 +9757,7 @@ GameObject:
   - component: {fileID: 1268483604}
   - component: {fileID: 1268483603}
   m_Layer: 0
-  m_Name: Copy of bg_1 (2)
+  m_Name: Snowy Tree 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10024,7 +9933,7 @@ SpriteRenderer:
   m_Size: {x: 2, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
 --- !u!4 &1272630490
@@ -10126,7 +10035,7 @@ GameObject:
   - component: {fileID: 1290213613}
   - component: {fileID: 1290213612}
   m_Layer: 0
-  m_Name: Copy of bg_0 (5)
+  m_Name: Tree 20
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10218,7 +10127,7 @@ GameObject:
   - component: {fileID: 1295275718}
   - component: {fileID: 1295275717}
   m_Layer: 0
-  m_Name: Copy of bg_0 (1)
+  m_Name: Tree 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10450,7 +10359,7 @@ GameObject:
   - component: {fileID: 1316173703}
   - component: {fileID: 1316173702}
   m_Layer: 0
-  m_Name: Copy of bg_12 (11)
+  m_Name: Small Snowy Ground 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10589,7 +10498,7 @@ GameObject:
   - component: {fileID: 1329819100}
   - component: {fileID: 1329819099}
   m_Layer: 0
-  m_Name: Copy of bg_12 (27)
+  m_Name: Small Snowy Ground 22
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10865,7 +10774,7 @@ SpriteRenderer:
   m_Size: {x: 2, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
 --- !u!1 &1361355586
@@ -10880,7 +10789,7 @@ GameObject:
   - component: {fileID: 1361355588}
   - component: {fileID: 1361355587}
   m_Layer: 0
-  m_Name: Copy of bg_12 (15)
+  m_Name: Small Snowy Ground 8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11018,7 +10927,7 @@ GameObject:
   - component: {fileID: 1366477853}
   - component: {fileID: 1366477852}
   m_Layer: 0
-  m_Name: Copy of bg_0 (8)
+  m_Name: Tree 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11110,7 +11019,7 @@ GameObject:
   - component: {fileID: 1367636046}
   - component: {fileID: 1367636045}
   m_Layer: 0
-  m_Name: Copy of bg_1 (3)
+  m_Name: snowy tree 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11340,7 +11249,7 @@ SpriteRenderer:
   m_Size: {x: 2, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
 --- !u!1 &1389865353
@@ -11465,7 +11374,7 @@ SpriteRenderer:
   m_Size: {x: 2, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
 --- !u!4 &1389865356
@@ -11644,7 +11553,7 @@ SpriteRenderer:
   m_Size: {x: 2, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
 --- !u!1 &1424576436
@@ -11658,7 +11567,7 @@ GameObject:
   - component: {fileID: 1424576437}
   - component: {fileID: 1424576438}
   m_Layer: 0
-  m_Name: Copy of bg_0 (13)
+  m_Name: ' Tree 14'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11979,7 +11888,7 @@ SpriteRenderer:
   m_Size: {x: 2, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
 --- !u!1 &1445980201
@@ -11993,7 +11902,7 @@ GameObject:
   - component: {fileID: 1445980203}
   - component: {fileID: 1445980202}
   m_Layer: 0
-  m_Name: Copy of bg_18
+  m_Name: Snowy Blue Sky
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12085,7 +11994,7 @@ GameObject:
   - component: {fileID: 1462894684}
   - component: {fileID: 1462894685}
   m_Layer: 0
-  m_Name: Copy of bg_0 (22)
+  m_Name: Tree 13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12177,7 +12086,7 @@ GameObject:
   - component: {fileID: 1498469357}
   - component: {fileID: 1498469358}
   m_Layer: 0
-  m_Name: Copy of bg_0 (12)
+  m_Name: Tree 9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12269,7 +12178,7 @@ GameObject:
   - component: {fileID: 1505935691}
   - component: {fileID: 1505935692}
   m_Layer: 0
-  m_Name: Copy of bg_0 (16)
+  m_Name: Tree 6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12650,7 +12559,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -8286608827298574006, guid: e33ced28b5cb42c409d1a53f1225ea54, type: 3}
+  m_Sprite: {fileID: -8286608827298574006, guid: e14e4f31b20fa604594a2655a2ad6152, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -13058,7 +12967,7 @@ GameObject:
   - component: {fileID: 1675701290}
   - component: {fileID: 1675701289}
   m_Layer: 0
-  m_Name: Copy of bg_12 (26)
+  m_Name: Small Snowy Ground 19
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13428,7 +13337,7 @@ GameObject:
   - component: {fileID: 1702772852}
   - component: {fileID: 1702772851}
   m_Layer: 0
-  m_Name: Copy of bg_12 (1)
+  m_Name: Small Snowy Ground 13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13982,7 +13891,7 @@ SpriteRenderer:
   m_Size: {x: 2, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
 --- !u!1 &1774287268
@@ -14135,7 +14044,7 @@ GameObject:
   - component: {fileID: 1784635525}
   - component: {fileID: 1784635526}
   m_Layer: 0
-  m_Name: Copy of bg_0 (14)
+  m_Name: Tree 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -41975,7 +41884,7 @@ SpriteRenderer:
   m_Size: {x: 2, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
 --- !u!1 &1806381570
@@ -41989,7 +41898,7 @@ GameObject:
   - component: {fileID: 1806381572}
   - component: {fileID: 1806381571}
   m_Layer: 0
-  m_Name: Copy of bg_1
+  m_Name: Snowy Tree 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -42099,6 +42008,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 187959903}
   - {fileID: 400952227}
   - {fileID: 838044776}
   - {fileID: 1389088502}
@@ -42148,7 +42058,6 @@ Transform:
   - {fileID: 1361355589}
   - {fileID: 204161893}
   - {fileID: 716755617}
-  - {fileID: 311983697}
   - {fileID: 477832188}
   - {fileID: 447270523}
   - {fileID: 933876202}
@@ -42190,7 +42099,6 @@ Transform:
   - {fileID: 2088754421}
   - {fileID: 1245172008}
   - {fileID: 1796570165}
-  - {fileID: 1233111128}
   - {fileID: 435116826}
   - {fileID: 1010476517}
   - {fileID: 699925090}
@@ -42229,7 +42137,7 @@ GameObject:
   - component: {fileID: 1818215323}
   - component: {fileID: 1818215322}
   m_Layer: 0
-  m_Name: Copy of bg_12 (13)
+  m_Name: Small Snowy Ground 6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -42478,7 +42386,7 @@ SpriteRenderer:
   m_Size: {x: 2, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
 --- !u!4 &1825326517
@@ -42796,7 +42704,7 @@ SpriteRenderer:
   m_Size: {x: 2, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
 --- !u!1 &1870737489
@@ -43005,7 +42913,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -8286608827298574006, guid: e33ced28b5cb42c409d1a53f1225ea54, type: 3}
+  m_Sprite: {fileID: -8286608827298574006, guid: e14e4f31b20fa604594a2655a2ad6152, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -43597,7 +43505,7 @@ SpriteRenderer:
   m_Size: {x: 2, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
 --- !u!1 &1993291645
@@ -43890,7 +43798,7 @@ GameObject:
   - component: {fileID: 2027140280}
   - component: {fileID: 2027140279}
   m_Layer: 0
-  m_Name: Copy of bg_12 (18)
+  m_Name: Small Snowy Ground 25
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44029,7 +43937,7 @@ GameObject:
   - component: {fileID: 2047878926}
   - component: {fileID: 2047878925}
   m_Layer: 0
-  m_Name: Copy of bg_12 (25)
+  m_Name: Small Snowy Ground 23
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44278,7 +44186,7 @@ SpriteRenderer:
   m_Size: {x: 2, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
 --- !u!4 &2053160245
@@ -44458,7 +44366,7 @@ GameObject:
   - component: {fileID: 2122800322}
   - component: {fileID: 2122800323}
   m_Layer: 0
-  m_Name: Copy of bg_0 (17)
+  m_Name: Tree 7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

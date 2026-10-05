@@ -74,7 +74,7 @@ public class Player : MonoBehaviour
         }
 
         // The attacking code 
-        if (attackAction.WasPressedThisFrame() &&)
+        if (attackAction.WasPressedThisFrame() )
         {
             // Initation of the weapon at the position and rotation 
             GameObject clone;
