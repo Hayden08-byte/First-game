@@ -15,6 +15,8 @@ public class Player : MonoBehaviour
     SpriteRenderer sr;
     HelperScript helper;
     bool TabkeyisPressed;
+    InputAction attackAction;
+    public GameObject weapon;
 
 
 
@@ -26,6 +28,8 @@ public class Player : MonoBehaviour
         moveAction = InputSystem.actions.FindAction("Move");
         jumpAction = InputSystem.actions.FindAction("jump");
         crouchAction = InputSystem.actions.FindAction("crouch");
+        attackAction = InputSystem.actions.FindAction("Attack");
+
 
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
@@ -50,7 +54,7 @@ public class Player : MonoBehaviour
             helper.DestroyObject();
         }
         */
-
+        // Walking motion code
         if (rb.linearVelocityX != 0)
         {
             anim.SetBool("walk", true);
@@ -59,7 +63,7 @@ public class Player : MonoBehaviour
         {
             anim.SetBool("walk", false);
         }
-
+        // Crouching motion code
         if (crouchAction.IsPressed())
         {
             anim.SetBool("crouch", true);
@@ -68,6 +72,27 @@ public class Player : MonoBehaviour
         {
             anim.SetBool("crouch", false);
         }
+
+        // The attacking code 
+        if (attackAction.WasPressedThisFrame())
+        {
+            // Initation of the weapon at the position and rotation 
+            GameObject clone;
+            clone = Instantiate(weapon, transform.position, transform.rotation);
+
+            // for the 2D Rigidbody Component
+            Rigidbody2D rb = clone.GetComponent<Rigidbody2D>();
+            
+            //set the x velocity to 15 and y to 0
+            rb.linearVelocity = new Vector2(15, 0);
+
+            // set position close to the player 
+            rb.transform.position = new Vector3(transform.position.x, transform.position.y +
+            2,transform.position.z + 1);
+        }
+
+
+
 
         Jump();
 
