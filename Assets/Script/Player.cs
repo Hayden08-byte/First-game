@@ -74,7 +74,7 @@ public class Player : MonoBehaviour
         }
 
         // The attacking code 
-        if (attackAction.WasPressedThisFrame())
+        if (attackAction.WasPressedThisFrame() &&)
         {
             // Initation of the weapon at the position and rotation 
             GameObject clone;
@@ -90,7 +90,7 @@ public class Player : MonoBehaviour
             rb.transform.position = new Vector3(transform.position.x, transform.position.y +
             2,transform.position.z + 1);
         }
-
+        
 
 
 
